@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>lesson #06</title>
+       <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">App Survey form</h1>
+            <p id="description">thank you for your feedback.</p>
+
+            <form action="thankyou.html" method="GET">
+
+            <div>
+                <label for="full-name">Full Name: </label>
+                <input id="full-name" type="text" placeholder="Zainab Salehi" name="Full-name" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address: </label>
+                <input id="email" type="email" placeholder="zainabsalehi@gmail.com" name="email-address" readonly>
+            </div>
+
+            <div>
+                <label>password: </label>
+                <input type="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="age">age </label>
+                <input id="age" type="number" name="age" min="15" max="60">
+            </div>
+
+            <div>
+                <label for="city">what city do you live in?</label>
+                <select id="city" name="city">
+                <option value="Kabul">Kabul</option>
+                <option value="Herat">Herat</option>
+                <option value="Farah">Farah</option>
+                <option value="Bamyan">Bamyan</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="labs">what you liked to see improved</label>
+            <input id="labs" type="checkbox" name="check" value="labs">
+            <label class="inline-label" for="labs">labs</label>
+            <input id="assignment" type="checkbox" name="check" value="assignment">
+            <label class="inline-lable" for="assignment">assignment</label>
+            </div>
+
+            <div>
+            <label for="option">would you recommend app to a friend?</label>
+
+            <input id="option" type="radio" name="option" value="definitely">
+            <label class="inline-label" for="option">definitely</label>
+            <input id="not-sure" type="radio" name="option" value="not-sure">
+            <label class="inline-label" for="not-sure">not sure</label>
+            </div>
+
+            <div>
+            <label for="comments">additional comments :</label>
+            <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div class="button-row">
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
+
+            </form>
+
+            
+        </div>
+    </body>
+</html>
